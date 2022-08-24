@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="admin">
+
+
+<listeners>
+<listener class-name="com.admin.utilities.Reporting"/>
+</listeners>
+
+<test name="admin test">
+ <parameter name="browser" value="chrome"/>
+ <classes>
+ <class name="com.admin.testcases.TC_login_001"/>
+ </classes>
+ </test>
+ </suite>
